@@ -54,7 +54,7 @@ It is recommended you include [normalize.css](https://github.com/necolas/normali
 
 The following variables can be configured for `_base.scss`.
 
-```sass
+```scss
 $color-text: #444;
 $color-bg: #fff;
 $color-selection: #b3d4fc;
@@ -67,7 +67,7 @@ $baseline: $line-height * $sizing-unit;
 
 A `$breakpoints` map is used for `_responsive-utils.scss`. The default values are based on [Bootstrap's breakpoints](http://getbootstrap.com/css/#responsive-utilities).
 
-```sass
+```scss
 $breakpoints: (
   "xs": "(max-width: 767px)",
   "sm": "(min-width: 768px)",
