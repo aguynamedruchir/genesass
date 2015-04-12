@@ -1,0 +1,14 @@
+{
+  "name": "genesass",
+  "version": "1.0.0",
+  "author": "Ruchir L. Sharma <aguynamedruchir@gmail.com> (http://aguynamedruchir.com)",
+  "description": "Smarter defaults + Sass helpers",
+  "keywords": [
+    "boilerplate",
+    "css",
+    "sass",
+    "scss",
+    "web"
+  ],
+  "license": "Public Domain (CC0)"
+}
