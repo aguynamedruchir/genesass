@@ -1,6 +1,6 @@
 {
   "name": "genesass",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "authors": [
     "Ruchir L. Sharma <aguynamedruchir@gmail.com> (http://aguynamedruchir.com)"
   ],
@@ -12,5 +12,9 @@
     "scss",
     "web"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aguynamedruchir/genesass.git"
+  },
   "license": "Public Domain (CC0)"
 }

@@ -10,10 +10,10 @@ Smarter defaults + Sass helpers
 These include:
 
 - Setting the default box-sizing to [border-box](http://paulirish.com/2012/box-sizing-border-box-ftw/).
-- [Print styles](core/_print.scss) adapted from [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css).
+- [Print styles](https://github.com/aguynamedruchir/genesass/blob/master/core/_print.scss) adapted from [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css).
 - Vertical rhythm using [single-direction margins](http://csswizardry.com/2012/06/single-direction-margin-declarations/).
-- A [breakpoints map and mixin](core/_responsive-utils.scss) for writing manageable media queries.
-- [And lots more!](core/)
+- A [breakpoints map and mixin](https://github.com/aguynamedruchir/genesass/blob/master/core/_responsive-utils.scss) for writing manageable media queries.
+- [And lots more!](https://github.com/aguynamedruchir/genesass/blob/master/core/)
 
 
 ## Getting started
@@ -80,4 +80,4 @@ $breakpoints: (
 
 ## License
 
-Dedicated to the public domain under [CC0](LICENSE).
+Dedicated to the public domain under [CC0](https://github.com/aguynamedruchir/genesass/blob/master/LICENSE).
