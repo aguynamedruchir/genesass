@@ -1,19 +1,19 @@
 
 # genesass
 
-Smarter defaults + Sass helpers
+A minimalistic Sass starter kit.
 
 ## About
 
-`genesass` is a collection of (opinionated) default styles and Sass helpers. 
+`genesass` is a collection of opinionated default styles and Sass helpers. 
 
 These include:
 
 - Setting the default box-sizing to [border-box](http://paulirish.com/2012/box-sizing-border-box-ftw/).
-- [Print styles](https://github.com/aguynamedruchir/genesass/blob/master/core/_print.scss) adapted from [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css).
+- [Print styles](https://github.com/aguynamedruchir/genesass/blob/master/main/scss/_print.scss) adapted from [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css).
 - Vertical rhythm using [single-direction margins](http://csswizardry.com/2012/06/single-direction-margin-declarations/).
-- A [breakpoints map and mixin](https://github.com/aguynamedruchir/genesass/blob/master/core/_responsive-utils.scss) for writing manageable media queries.
-- [And lots more!](https://github.com/aguynamedruchir/genesass/blob/master/core/)
+- [Media queries](https://github.com/aguynamedruchir/genesass/blob/master/main/scss/_media-queries.scss) for multi-device development.
+- [And lots more!](https://github.com/aguynamedruchir/genesass/blob/master/main/scss/)
 
 
 ## Getting started
@@ -27,14 +27,14 @@ $ bower install genesass
 $ npm install genesass
 ```
 
-Then, import in your `main.scss` file
+Then import in your main Sass/SCSS file
 
 ```scss
-@import "../bower_components/genesass/genesass.scss";
+@import "../bower_components/genesass/main/genesass";
 ```
 
 ```scss
-@import "../node_modules/genesass/genesass.scss";
+@import "../node_modules/genesass/main/genesass";
 ```
 
 It is recommended you include [normalize.css](https://github.com/necolas/normalize.css) before importing `genesass`.
@@ -42,39 +42,36 @@ It is recommended you include [normalize.css](https://github.com/necolas/normali
 
 ## What's included
 
-`genesass.scss` imports the following files from the `core` folder: 
+`genesass` includes: 
 
 - **_fixes.scss** Some common fixes, such as setting the box-sizing to border-box and enhancing font rendering.
-- **_responsive-utils.scss** A `$breakpoints` map, and a mixin `media-query` to generate media queries from it.
-- **_base.scss** Opinionated default styles with configurable variables.
+- **_media-queries.scss** Breakpoint and media query variables.
+- **_base.scss** Opinionated default styles with customizable variables.
 - **_print.scss** Print styles adapted from [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css).
 
 
-## Configuration
+## Customizing
 
 The following variables can be configured for `_base.scss`.
 
 ```scss
-$color-text: #444;
+$color-text: #333;
 $color-bg: #fff;
 $color-selection: #b3d4fc;
 
 $font-size: 16px;
-$sizing-unit: 1rem;
+
 $line-height: 1.625;
-$baseline: $line-height * $sizing-unit;
+$baseline: $line-height * 1rem;
 ```
 
-A `$breakpoints` map is used for `_responsive-utils.scss`. The default values are based on [Bootstrap's breakpoints](http://getbootstrap.com/css/#responsive-utilities).
+Breakpoints can be configured for `_media-queries.scss`. The default values are based on [Bootstrap's breakpoints](http://getbootstrap.com/css/#responsive-utilities).
 
 ```scss
-$breakpoints: (
-  "xs": "(max-width: 767px)",
-  "sm": "(min-width: 768px)",
-  "md": "(min-width: 992px)",
-  "lg": "(min-width: 1200px)",
-  "xl": "(min-width: 1600px)",
-);
+$breakpoint-sm:  768px;
+$breakpoint-md:  992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1600px;
 ```
 
 

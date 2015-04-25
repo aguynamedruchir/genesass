@@ -1,8 +1,8 @@
 /* ==========================================================================
-   Some common fixes
+   Fixes
    ========================================================================== */
 
-/*
+/**
  * Box-sizing: border-box FTW!
  * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
  * https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
@@ -17,14 +17,14 @@
 }
 
 
-/*
+/**
  * Force scrollbar to prevent content jump
  */
 
 :root { overflow-y: scroll; }
 
 
-/*
+/**
  * Remove the gap between audio, canvas, iframes,
  * images, videos and the bottom of their containers
  * https://github.com/h5bp/html5-boilerplate/issues/440
@@ -40,7 +40,7 @@ video {
 }
 
 
-/*
+/**
  * Better font rendering
  */
 
@@ -51,7 +51,7 @@ video {
 }
 
 
-/*
+/**
  * Remove default fieldset styles.
  */
 
@@ -62,17 +62,15 @@ fieldset {
 }
 
 
-/*
+/**
  * Allow only vertical resizing of textareas.
  */
 
-textarea {
-  resize: vertical;
-}
+textarea { resize: vertical; }
 
 
-/*
- * Not allowed cursor for disabled elements.
+/**
+ * Show `Not allowed` cursor for disabled elements.
  * https://youtu.be/54wJkqG8jXE?t=35m50s
  */
 

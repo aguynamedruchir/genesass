@@ -1,0 +1,33 @@
+/* ==========================================================================
+   Media queries
+   ========================================================================== */
+
+$breakpoint-sm:  768px !default;
+$breakpoint-md:  992px !default;
+$breakpoint-lg: 1200px !default;
+$breakpoint-xl: 1600px !default;
+
+
+$screen: "only screen" !default;
+
+$xs: "#{screen} and (max-width: #{$breakpoint-sm - 1})" !default;
+
+$sm: "#{screen} and (min-width: #{$breakpoint-sm})" !default;
+$sm-only: "#{$sm} and (max-width: #{$breakpoint-md - 1})" !default;
+
+$md: "#{screen} and (min-width: #{$breakpoint-md})" !default;
+$md-only: "#{$md} and (max-width: #{$breakpoint-lg - 1})" !default;
+
+$lg: "#{screen} and (min-width: #{$breakpoint-lg})" !default;
+$lg-only: "#{$lg} and (max-width: #{$breakpoint-xl - 1})" !default;
+
+$xl: "#{screen} and (min-width: #{$breakpoint-xl})" !default;
+
+
+/**
+ * Usage:
+ *
+ *  @media #{$sm} {
+ *    ...
+ *  }
+ */
