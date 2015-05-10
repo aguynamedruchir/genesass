@@ -1,8 +1,8 @@
 {
   "name": "genesass",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "author": "Ruchir L. Sharma <aguynamedruchir@gmail.com> (http://aguynamedruchir.com)",
-  "description": "A minimalistic Sass starter kit",
+  "description": "A minimalistic SCSS starter kit",
   "keywords": [
     "boilerplate",
     "css",

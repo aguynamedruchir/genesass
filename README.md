@@ -1,11 +1,11 @@
 
 # genesass
 
-A minimalistic Sass starter kit.
+A minimalistic SCSS starter kit.
 
 ## About
 
-`genesass` is a collection of opinionated default styles and Sass helpers. 
+`genesass` is a collection of opinionated default styles and SCSS helpers.
 
 These include:
 
@@ -27,7 +27,7 @@ $ bower install genesass
 $ npm install genesass
 ```
 
-Then import in your main Sass/SCSS file
+Then import in your main SCSS file
 
 ```scss
 @import "../bower_components/genesass/main/genesass";
@@ -42,7 +42,7 @@ It is recommended you include [normalize.css](https://github.com/necolas/normali
 
 ## What's included
 
-`genesass` includes: 
+`genesass` includes:
 
 - **_fixes.scss** Some common fixes, such as setting the box-sizing to border-box and enhancing font rendering.
 - **_media-queries.scss** Breakpoint and media query variables.
