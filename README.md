@@ -3,7 +3,7 @@
 A minimalistic SCSS starter kit.
 
 - `_fixes.scss` Some common fixes, such as setting the box-sizing to border-box and enhancing font rendering.
-- `_media-queries.scss` Breakpoint and media query variables.
+- `_media-queries.scss` Breakpoints and media queries.
 - `_base.scss` Opinionated default styles with customizable variables.
 - `_print.scss` Print styles adapted from [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css).
 
@@ -35,12 +35,16 @@ It is recommended you include [normalize.css](https://github.com/necolas/normali
 
 ## Customizing
 
+### \_base.scss
+
 `$g-line-height` and `$g-baseline` are used for setting vertical rhythm in `_base.scss`.
 
 ```scss
 $g-line-height: 1.625;
 $g-baseline: $g-line-height * 1rem;
 ```
+
+### \_media-queries.scss
 
 Breakpoints can be customized for `_media-queries.scss`. The default values are based on [Bootstrap's breakpoints](http://getbootstrap.com/css/#responsive-utilities).
 
@@ -58,6 +62,26 @@ $breakpoint-md:   992px;
 $breakpoint-lg:  1200px;
 $breakpoint-xl:  1920px;
 $breakpoint-xxl: 4096px;
+```
+
+Use interpolation to include a media query:
+
+```scss
+@media #{$sm} {
+  ...
+}
+```
+
+```scss
+@media #{$lg-only} and (orientation: landscape) {
+  ...
+}
+```
+
+```scss
+@media #{$xs-only}, #{$sm-only} {
+  ...
+}
 ```
 
 
