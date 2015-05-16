@@ -23,24 +23,24 @@ $breakpoint-xxl: 4096px !default;
 
 $screen: "only screen" !default;
 
-$xxs: "#{screen} and (max-width: #{$breakpoint-xs - 1})" !default;
+$xxs: "#{$screen} and (max-width: #{$breakpoint-xs - 1})" !default;
 
-$xs: "#{screen} and (min-width: #{$breakpoint-xs})" !default;
+$xs: "#{$screen} and (min-width: #{$breakpoint-xs})" !default;
 $xs-only: "#{$xs} and (max-width: #{$breakpoint-sm - 1})" !default;
 
-$sm: "#{screen} and (min-width: #{$breakpoint-sm})" !default;
+$sm: "#{$screen} and (min-width: #{$breakpoint-sm})" !default;
 $sm-only: "#{$sm} and (max-width: #{$breakpoint-md - 1})" !default;
 
-$md: "#{screen} and (min-width: #{$breakpoint-md})" !default;
+$md: "#{$screen} and (min-width: #{$breakpoint-md})" !default;
 $md-only: "#{$md} and (max-width: #{$breakpoint-lg - 1})" !default;
 
-$lg: "#{screen} and (min-width: #{$breakpoint-lg})" !default;
+$lg: "#{$screen} and (min-width: #{$breakpoint-lg})" !default;
 $lg-only: "#{$lg} and (max-width: #{$breakpoint-xl - 1})" !default;
 
-$xl: "#{screen} and (min-width: #{$breakpoint-xl})" !default;
+$xl: "#{$screen} and (min-width: #{$breakpoint-xl})" !default;
 $xl-only: "#{$xl} and (max-width: #{$breakpoint-xxl - 1})" !default;
 
-$xxl: "#{screen} and (min-width: #{$breakpoint-xxl})" !default;
+$xxl: "#{$screen} and (min-width: #{$breakpoint-xxl})" !default;
 
 
 /**
