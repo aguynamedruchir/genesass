@@ -50,6 +50,7 @@ Breakpoints can be customized for `_media-queries.scss`. The default values are 
 
 - `xxs`: Watches, wearables
 - ` xs`: Phones
+- ` sm`: Tablets
 - ` md`: Tablets
 - ` lg`: Laptops, notebooks
 - ` xl`: Desktops (HD)
