@@ -2,7 +2,6 @@
 
 A minimalistic SCSS starter kit.
 
-
 - `_fixes.scss` Some common fixes, such as setting the box-sizing to border-box and enhancing font rendering.
 - `_media-queries.scss` Breakpoint and media query variables.
 - `_base.scss` Opinionated default styles with customizable variables.
@@ -45,11 +44,20 @@ $g-baseline: $g-line-height * 1rem;
 
 Breakpoints can be customized for `_media-queries.scss`. The default values are based on [Bootstrap's breakpoints](http://getbootstrap.com/css/#responsive-utilities).
 
+- `xxs`: Watches, wearables
+- ` xs`: Phones
+- ` md`: Tablets
+- ` lg`: Laptops, notebooks
+- ` xl`: Desktops (HD)
+- `xxl`: Desktops (4K)
+
 ```scss
-$breakpoint-sm:  768px;
-$breakpoint-md:  992px;
-$breakpoint-lg: 1200px;
-$breakpoint-xl: 1600px;
+$breakpoint-xs:   320px;
+$breakpoint-sm:   768px;
+$breakpoint-md:   992px;
+$breakpoint-lg:  1200px;
+$breakpoint-xl:  1920px;
+$breakpoint-xxl: 4096px;
 ```
 
 

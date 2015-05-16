@@ -2,15 +2,31 @@
    Media queries
    ========================================================================== */
 
-$breakpoint-sm:  768px !default;
-$breakpoint-md:  992px !default;
-$breakpoint-lg: 1200px !default;
-$breakpoint-xl: 1600px !default;
+/**
+ * Breakpoints
+ *
+ *   xxs : Watches, wearables
+ *    xs : Phones
+ *    md : Tablets
+ *    lg : Laptops, notebooks
+ *    xl : Desktops (HD)
+ *   xxl : Desktops (4K)
+ *
+ */
 
+$breakpoint-xs:   320px !default;
+$breakpoint-sm:   768px !default;
+$breakpoint-md:   992px !default;
+$breakpoint-lg:  1200px !default;
+$breakpoint-xl:  1920px !default;
+$breakpoint-xxl: 4096px !default;
 
 $screen: "only screen" !default;
 
-$xs: "#{screen} and (max-width: #{$breakpoint-sm - 1})" !default;
+$xxs: "#{screen} and (max-width: #{$breakpoint-xs - 1})" !default;
+
+$xs: "#{screen} and (min-width: #{$breakpoint-xs})" !default;
+$xs-only: "#{$xs} and (max-width: #{$breakpoint-sm - 1})" !default;
 
 $sm: "#{screen} and (min-width: #{$breakpoint-sm})" !default;
 $sm-only: "#{$sm} and (max-width: #{$breakpoint-md - 1})" !default;
@@ -22,6 +38,9 @@ $lg: "#{screen} and (min-width: #{$breakpoint-lg})" !default;
 $lg-only: "#{$lg} and (max-width: #{$breakpoint-xl - 1})" !default;
 
 $xl: "#{screen} and (min-width: #{$breakpoint-xl})" !default;
+$xl-only: "#{$xl} and (max-width: #{$breakpoint-xxl - 1})" !default;
+
+$xxl: "#{screen} and (min-width: #{$breakpoint-xxl})" !default;
 
 
 /**
@@ -30,4 +49,9 @@ $xl: "#{screen} and (min-width: #{$breakpoint-xl})" !default;
  *  @media #{$sm} {
  *    ...
  *  }
+ *
+ *  @media #{$md-only} {
+ *    ...
+ *  }
+ *
  */
