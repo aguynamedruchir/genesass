@@ -37,11 +37,11 @@ It is recommended you include [normalize.css](https://github.com/necolas/normali
 
 ### \_base.scss
 
-`$g-line-height` and `$g-baseline` are used for setting vertical rhythm in `_base.scss`.
+`$line-height` and `$baseline` are used for setting vertical rhythm in `_base.scss`.
 
 ```scss
-$g-line-height: 1.625;
-$g-baseline: $g-line-height * 1rem;
+$line-height: 1.625;
+$baseline: $line-height * 1rem;
 ```
 
 ### \_media-queries.scss
