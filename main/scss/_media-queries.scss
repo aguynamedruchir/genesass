@@ -17,25 +17,25 @@
 
 $screen: "only screen" !default;
 
-$breakpoint-xs:   320px !default;
-$breakpoint-sm:   768px !default;
-$breakpoint-md:   992px !default;
-$breakpoint-lg:  1200px !default;
-$breakpoint-xl:  1920px !default;
-$breakpoint-xxl: 4096px !default;
+$min-width-xs:   320px !default;
+$min-width-sm:   768px !default;
+$min-width-md:   992px !default;
+$min-width-lg:  1200px !default;
+$min-width-xl:  1920px !default;
+$min-width-xxl: 4096px !default;
 
-$query-xxs: "(max-width: #{$breakpoint-xs - 1})" !default;
-$query-xs:  "(min-width: #{$breakpoint-xs})"     !default;
-$query-sm:  "(min-width: #{$breakpoint-sm})"     !default;
-$query-md:  "(min-width: #{$breakpoint-md})"     !default;
-$query-lg:  "(min-width: #{$breakpoint-lg})"     !default;
-$query-xl:  "(min-width: #{$breakpoint-xl})"     !default;
-$query-xxl: "(min-width: #{$breakpoint-xxl})"    !default;
-$query-xs-only: "#{$query-xs} and (max-width: #{$breakpoint-sm  - 1})" !default;
-$query-sm-only: "#{$query-sm} and (max-width: #{$breakpoint-md  - 1})" !default;
-$query-md-only: "#{$query-md} and (max-width: #{$breakpoint-lg  - 1})" !default;
-$query-lg-only: "#{$query-lg} and (max-width: #{$breakpoint-xl  - 1})" !default;
-$query-xl-only: "#{$query-xl} and (max-width: #{$breakpoint-xxl - 1})" !default;
+$query-xxs: "(max-width: #{$min-width-xs - 1})" !default;
+$query-xs:  "(min-width: #{$min-width-xs})"     !default;
+$query-sm:  "(min-width: #{$min-width-sm})"     !default;
+$query-md:  "(min-width: #{$min-width-md})"     !default;
+$query-lg:  "(min-width: #{$min-width-lg})"     !default;
+$query-xl:  "(min-width: #{$min-width-xl})"     !default;
+$query-xxl: "(min-width: #{$min-width-xxl})"    !default;
+$query-xs-only: "#{$query-xs} and (max-width: #{$min-width-sm  - 1})" !default;
+$query-sm-only: "#{$query-sm} and (max-width: #{$min-width-md  - 1})" !default;
+$query-md-only: "#{$query-md} and (max-width: #{$min-width-lg  - 1})" !default;
+$query-lg-only: "#{$query-lg} and (max-width: #{$min-width-xl  - 1})" !default;
+$query-xl-only: "#{$query-xl} and (max-width: #{$min-width-xxl - 1})" !default;
 
 $xxs: "#{$screen} and #{$query-xxs}" !default;
 $xs:  "#{$screen} and #{$query-xs}"  !default;

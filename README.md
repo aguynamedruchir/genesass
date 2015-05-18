@@ -57,12 +57,12 @@ Breakpoints can be customized for `_media-queries.scss`. The default values are 
 - `xxl`: Desktops (4K)
 
 ```scss
-$breakpoint-xs:   320px;
-$breakpoint-sm:   768px;
-$breakpoint-md:   992px;
-$breakpoint-lg:  1200px;
-$breakpoint-xl:  1920px;
-$breakpoint-xxl: 4096px;
+$min-width-xs:   320px;
+$min-width-sm:   768px;
+$min-width-md:   992px;
+$min-width-lg:  1200px;
+$min-width-xl:  1920px;
+$min-width-xxl: 4096px;
 ```
 
 Use interpolation to include a media query:
