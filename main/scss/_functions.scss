@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Sass Functions
+   ========================================================================== */
+
+/**
+ *
+ * strip-unit
+ *   Returns the number when passed in a value with a measurement unit like px,
+ *   em, or rem.
+ * 
+ */
+
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
