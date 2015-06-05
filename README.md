@@ -3,6 +3,7 @@
 A minimalistic SCSS starter kit.
 
 - `_fixes.scss` Some common fixes, such as setting the box-sizing to border-box and enhancing font rendering.
+- `functions.scss` Useful Sass functions.
 - `_media-queries.scss` Breakpoints and media queries.
 - `_base.scss` Opinionated default styles with customizable variables.
 - `_print.scss` Print styles adapted from [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css).
