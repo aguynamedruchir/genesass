@@ -61,6 +61,7 @@ html { line-height: $line-height; }
 blockquote,
 ul, ol, dl,
 p, figure,
-pre, table, fieldset, hr {
+pre, table, fieldset, hr,
+h1, h2, h3, h4, h5, h6 {
   @extend %block-element;
 }
